@@ -9,4 +9,10 @@ public interface EmployeeService {
     EmployeeRequest createEmployee(EmployeeRequest employeeDto);
 
     List<EmployeeRequest> getAllEmployee();
+
+    EmployeeRequest getEmployeeById(Long id);
+
+    EmployeeRequest updateEmployee(Long id, EmployeeRequest employeeRequest);
+
+    boolean deleteEmployee(Long id);
 }
