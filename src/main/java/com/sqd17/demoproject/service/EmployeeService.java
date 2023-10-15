@@ -1,8 +1,12 @@
 package com.sqd17.demoproject.service;
 
-import com.sqd17.demoproject.dto.EmployeeDto;
+import com.sqd17.demoproject.dto.EmployeeRequest;
+
+import java.util.List;
 
 public interface EmployeeService {
 
-    EmployeeDto createEmployee(EmployeeDto employeeDto);
+    EmployeeRequest createEmployee(EmployeeRequest employeeDto);
+
+    List<EmployeeRequest> getAllEmployee();
 }
