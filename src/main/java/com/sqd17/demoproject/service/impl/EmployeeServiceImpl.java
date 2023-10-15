@@ -41,7 +41,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         List<EmployeeRequest> employeeRequests = employeeEntities
                 .stream()
-                .map(emp -> new EmployeeRequest(
+                .map(emp -> new EmployeeRequest(emp.getId(),
                         emp.getFirstName(), emp.getLastName(), emp.getEmail()))
                 .collect(Collectors.toList());
 
